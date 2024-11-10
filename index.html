@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformative Video Edits</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <meta name="description" content="Transformative video edits by a dedicated video editor and 2nd-year CS student at IIIT Manipur. Specializing in short-form reels for Instagram and more.">
+    <meta name="keywords" content="video editing, transformative video edits, CapCut, VN, Premiere Pro, IIIT Manipur, Instagram reels, YouTube videos">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Transformative Video Edits</h1>
+            <div class="menu-btn" onclick="toggleMenu()">&#9776;</div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <section id="about" class="section">
+        <div class="container about-content">
+            <div class="about-profile">
+                <!-- Profile Picture -->
+                <img src="./ProfilePic.jpg" alt="Profile Picture" class="profile-img">
+            </div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>I’m a dedicated video editor and a 2nd-year CS student at IIIT Manipur with
+                     a passion for visual storytelling. Recently, I've worked with YouTubers 
+                     and tech influencers, creating dynamic videos using Premiere Pro, CapCut,
+                      and VN. I excel at crafting engaging short-form reels tailored for Instagram and Youtube
+                      . Let’s make your content shine!</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="work" class="section">
+        <div class="container">
+            <h2>My Work</h2>
+            <div class="video-grid">
+                <div class="video-item">
+                    <video onclick="enlargeVideo(this)" controls autoplay loop muted>
+                        <source src="./lv_0_20240706204530.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p></p>
+                </div>
+                <div class="video-item">
+                    <video onclick="enlargeVideo(this)" controls autoplay loop muted>
+                        <source src="./assets (3) (1).mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p></p>
+                </div>
+                <div class="video-item">
+                    <video onclick="enlargeVideo(this)" controls autoplay loop muted>
+                        <source src="./lv_0_20240812170902.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p></p>
+                </div>
+                <div class="video-item">
+                    <video onclick="enlargeVideo(this)" controls autoplay loop muted>
+                        <source src="./lv_0_20240819104804.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p></p>
+                </div>
+                <div class="video-item">
+                    <video onclick="enlargeVideo(this)" controls autoplay loop muted>
+                        <source src="./Video from SUDEEP.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p></p>
+                </div>
+                <div class="video-item">
+                    <video onclick="enlargeVideo(this)" controls autoplay loop muted>
+                        <source src="./lv_0_20240617124229.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p></p>
+                </div>
+            </div>
+           <!-- HTML for GET IN TOUCH section -->
+<section class="get-in-touch">
+    <div class="container">
+        <h2>Get In Touch</h2>
+        <p>If you have any questions or want to collaborate, feel free to reach out!</p>
+        <a href="mailto:your-email@example.com" class="cta-button">Contact Me</a>
+    </div>
+</section>
+
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-container">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:thirkarthik30@gmail.com">thirkarthik30gmail.com</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/_.sudeep._30/" target="_blank">Profile</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/karthik-t-917ab12b1/" target="_blank">Profile</a></p>
+            <p>Phone: <a href="tel:+919392268820">+91-9392268820</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p> 2024 Transformative Video Edits</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/_.sudeep._30/" target="_blank"><img src="./insta.png" alt="Instagram profile"></a>
+                <a href="https://www.linkedin.com/in/karthik-t-917ab12b1/" target="_blank"><img src="./linkedin.png" alt="LinkedIn profile"></a>
+                <a href="tel:+919392268820"><img src="./telephone.png" alt="Phone contact"></a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="video-overlay" class="overlay">
+        <div class="overlay-content">
+            <span class="close-btn" onclick="closeVideo()">&times;</span>
+            <video id="enlarged-video" controls></video>
+        </div>
+    </div>
+
+    <script>
+    function enlargeVideo(videoElement) {
+        const overlay = document.getElementById('video-overlay');
+        const enlargedVideo = document.getElementById('enlarged-video');
+        enlargedVideo.src = videoElement.querySelector('source').src;
+        overlay.style.display = 'flex';
+        document.body.style.overflow = 'hidden'; // Disable scroll
+        videoElement.pause(); // Pause the clicked video
+    }
+
+    function closeVideo() {
+        const overlay = document.getElementById('video-overlay');
+        const enlargedVideo = document.getElementById('enlarged-video');
+        enlargedVideo.pause(); // Pause the enlarged video
+        enlargedVideo.src = '';
+        overlay.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Enable scroll
+    }
+    function toggleMenu() {
+        const menu = document.querySelector('header nav ul.menu');
+        menu.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>
