@@ -1,137 +1,281 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Transformative Video Edits</title>
-  <link rel="stylesheet" href="index.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lobster&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <meta name="description" content="Transformative video edits by a dedicated video editor and 2nd-year CS student at IIIT Manipur. Specializing in short-form reels for Instagram and more." />
   <meta name="keywords" content="video editing, transformative video edits, CapCut, VN, Premiere Pro, IIIT Manipur, Instagram reels, YouTube videos" />
 </head>
 <body>
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+  
   <header>
     <div class="container">
-      <h1>Transformative Video Edits</h1>
-      <div class="menu-btn" onclick="toggleMenu()">&#9776;</div>
+      <h1 class="animate__animated animate__fadeInDown">Transformative Video Edits</h1>
+      <div class="menu-btn" onclick="toggleMenu()">
+        <div class="menu-btn__burger"></div>
+      </div>
       <nav>
         <ul class="menu">
-          <li><a href="#about">About</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section id="about" class="section animate-fade-in">
-    <div class="container about-content">
+  <section id="about" class="section">
+    <div class="container about-content animate__animated animate__fadeIn">
       <div class="about-profile">
-        <img src="./ProfilePic.jpg" alt="Profile Picture" class="profile-img" />
+        <div class="profile-img-container">
+          <img src="./ProfilePic.jpg" alt="Profile Picture" class="profile-img" />
+          <div class="profile-overlay"></div>
+        </div>
       </div>
       <div class="about-text">
-        <h2>About Me</h2>
-        <p>I’m a dedicated video editor and a 2nd-year CS student at IIIT Manipur with a passion for visual storytelling. Recently, I've worked with YouTubers and tech influencers, creating dynamic videos using Premiere Pro, CapCut, and VN. I excel at crafting engaging short-form reels tailored for Instagram and YouTube. Let’s make your content shine!</p>
+        <h2 class="animate-charcter">About Me</h2>
+        <p>I'm a dedicated video editor and a 2nd-year CS student at IIIT Manipur with a passion for visual storytelling. Recently, I've worked with YouTubers and tech influencers, creating dynamic videos using Premiere Pro, CapCut, and VN. I excel at crafting engaging short-form reels tailored for Instagram and YouTube. Let's make your content shine!</p>
+        <div class="skills">
+          <span class="skill-tag">Premiere Pro</span>
+          <span class="skill-tag">CapCut</span>
+          <span class="skill-tag">VN Editor</span>
+          <span class="skill-tag">After Effects</span>
+          <span class="skill-tag">Motion Graphics</span>
+        </div>
       </div>
     </div>
   </section>
 
-<section id="work" class="section animate-fade-in">
-  <div class="container">
-    <h2>My Previous Work</h2>
-    <div class="video-grid">
-      <!-- Video 1 -->
-      <div class="video-item">
-        <div class="video-wrapper-vertical">
-          <iframe src="https://drive.google.com/file/d/1VWiudU2f4qlNufbqJxl6puHuFm9WOSu5/preview" allow="autoplay"></iframe>
+  <section id="work" class="section">
+    <div class="container">
+      <h2 class="section-title animate-charcter">My Previous Work</h2>
+      <div class="video-grid">
+        <!-- Video 1 -->
+        <div class="video-item animate__animated">
+          <div class="video-wrapper-vertical">
+            <iframe src="https://drive.google.com/file/d/1VWiudU2f4qlNufbqJxl6puHuFm9WOSu5/preview" allow="autoplay"></iframe>
+            <div class="video-overlay">
+              <div class="play-icon"><i class="fas fa-play"></i></div>
+              <h3>Tech Review</h3>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <!-- Video 2 -->
-      <div class="video-item">
-        <div class="video-wrapper-vertical">
-          <iframe src="https://drive.google.com/file/d/11xbhm-Ah_GZiioD7GscdYdsxRBCyK3uI/preview" allow="autoplay"></iframe>
+        <!-- Video 2 -->
+        <div class="video-item animate__animated">
+          <div class="video-wrapper-vertical">
+            <iframe src="https://drive.google.com/file/d/11xbhm-Ah_GZiioD7GscdYdsxRBCyK3uI/preview" allow="autoplay"></iframe>
+            <div class="video-overlay">
+              <div class="play-icon"><i class="fas fa-play"></i></div>
+              <h3>Travel Vlog</h3>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <!-- Video 3 -->
-      <div class="video-item">
-        <div class="video-wrapper-vertical">
-          <iframe src="https://drive.google.com/file/d/1ccCEfD4cn1LM6X0x0g_Br-EW2fYqDuSy/preview" allow="autoplay"></iframe>
+        <!-- Video 3 -->
+        <div class="video-item animate__animated">
+          <div class="video-wrapper-vertical">
+            <iframe src="https://drive.google.com/file/d/1ccCEfD4cn1LM6X0x0g_Br-EW2fYqDuSy/preview" allow="autoplay"></iframe>
+            <div class="video-overlay">
+              <div class="play-icon"><i class="fas fa-play"></i></div>
+              <h3>Product Showcase</h3>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <!-- Video 4 -->
-      <div class="video-item">
-        <div class="video-wrapper-vertical">
-          <iframe src="https://drive.google.com/file/d/1-BZqUDkKwSb8BFqPkiU9rUZoA_dBbQkx/preview" allow="autoplay"></iframe>
+        <!-- Video 4 -->
+        <div class="video-item animate__animated">
+          <div class="video-wrapper-vertical">
+            <iframe src="https://drive.google.com/file/d/1-BZqUDkKwSb8BFqPkiU9rUZoA_dBbQkx/preview" allow="autoplay"></iframe>
+            <div class="video-overlay">
+              <div class="play-icon"><i class="fas fa-play"></i></div>
+              <h3>Music Video</h3>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <!-- Video 5 -->
-      <div class="video-item">
-        <div class="video-wrapper-vertical">
-          <iframe src="https://drive.google.com/file/d/1OpjokRVcKehs0q6TBLNzYT1Or_XJ2tqW/preview" allow="autoplay"></iframe>
+        <!-- Video 5 -->
+        <div class="video-item animate__animated">
+          <div class="video-wrapper-vertical">
+            <iframe src="https://drive.google.com/file/d/1OpjokRVcKehs0q6TBLNzYT1Or_XJ2tqW/preview" allow="autoplay"></iframe>
+            <div class="video-overlay">
+              <div class="play-icon"><i class="fas fa-play"></i></div>
+              <h3>Event Highlights</h3>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <!-- Video 6 -->
-      <div class="video-item">
-        <div class="video-wrapper-vertical">
-          <iframe src="https://drive.google.com/file/d/1HDGRFSGn1vnHDvKw3uZZHiN7R_qZ3S2d/preview" allow="autoplay"></iframe>
+        <!-- Video 6 -->
+        <div class="video-item animate__animated">
+          <div class="video-wrapper-vertical">
+            <iframe src="https://drive.google.com/file/d/1HDGRFSGn1vnHDvKw3uZZHiN7R_qZ3S2d/preview" allow="autoplay"></iframe>
+            <div class="video-overlay">
+              <div class="play-icon"><i class="fas fa-play"></i></div>
+              <h3>Brand Promotion</h3>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-
-  <section class="get-in-touch animate-fade-in">
+  <section class="get-in-touch">
     <div class="container">
-      <h2>Get In Touch</h2>
+      <h2 class="animate-charcter">Get In Touch</h2>
       <p>If you have any questions or want to collaborate, feel free to reach out!</p>
-      <a href="mailto:thirkarthik30@gmail.com" class="cta-button">Contact Me</a>
+      <a href="mailto:thirkarthik30@gmail.com" class="cta-button">
+        <span>Contact Me</span>
+        <svg width="13px" height="10px" viewBox="0 0 13 10">
+          <path d="M1,5 L11,5"></path>
+          <polyline points="8 1 12 5 8 9"></polyline>
+        </svg>
+      </a>
     </div>
   </section>
 
-  <section id="contact" class="section contact-container animate-fade-in">
+  <section id="contact" class="section contact-container">
     <div class="container">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:thirkarthik30@gmail.com">thirkarthik30@gmail.com</a></p>
-      <p>Instagram: <a href="https://www.instagram.com/_.sudeep._30/" target="_blank">Profile</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/karthik-t-917ab12b1/" target="_blank">Profile</a></p>
-      <p>Phone: <a href="tel:+919392268820">+91-9392268820</a></p>
+      <h2 class="animate-charcter">Contact Me</h2>
+      <div class="contact-grid">
+        <div class="contact-card animate__animated">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h3>Email</h3>
+          <a href="mailto:thirkarthik30@gmail.com">thirkarthik30@gmail.com</a>
+        </div>
+        
+        <div class="contact-card animate__animated">
+          <div class="contact-icon">
+            <i class="fab fa-instagram"></i>
+          </div>
+          <h3>Instagram</h3>
+          <a href="https://www.instagram.com/_.sudeep._30/" target="_blank">@_.sudeep._30</a>
+        </div>
+        
+        <div class="contact-card animate__animated">
+          <div class="contact-icon">
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+          <h3>LinkedIn</h3>
+          <a href="https://www.linkedin.com/in/karthik-t-917ab12b1/" target="_blank">Karthik T</a>
+        </div>
+        
+        <div class="contact-card animate__animated">
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <h3>Phone</h3>
+          <a href="tel:+919392268820">+91-9392268820</a>
+        </div>
+      </div>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      <p>2024 Transformative Video Edits</p>
+      <p>&copy; 2024 Transformative Video Edits. All rights reserved.</p>
       <div class="social-icons">
-        <a href="https://www.instagram.com/_.sudeep._30/" target="_blank"><img src="./insta.png" alt="Instagram" /></a>
-        <a href="https://www.linkedin.com/in/karthik-t-917ab12b1/" target="_blank"><img src="./linkedin.png" alt="LinkedIn" /></a>
-        <a href="tel:+919392268820"><img src="./telephone.png" alt="Phone" /></a>
+        <a href="https://www.instagram.com/_.sudeep._30/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/karthik-t-917ab12b1/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="tel:+919392268820" class="social-icon"><i class="fas fa-phone"></i></a>
       </div>
     </div>
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
   <script>
+    // Custom cursor
+    const cursor = document.querySelector('.cursor');
+    const cursorFollower = document.querySelector('.cursor-follower');
+    
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+      
+      gsap.to(cursorFollower, {
+        x: e.clientX,
+        y: e.clientY,
+        duration: 0.5,
+        ease: "power2.out"
+      });
+    });
+    
+    document.querySelectorAll('a, button, .video-item').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursor.classList.add('cursor-hover');
+        cursorFollower.classList.add('cursor-follower-hover');
+      });
+      el.addEventListener('mouseleave', () => {
+        cursor.classList.remove('cursor-hover');
+        cursorFollower.classList.remove('cursor-follower-hover');
+      });
+    });
+
+    // Animated hamburger menu
     function toggleMenu() {
-      document.querySelector('header nav ul.menu').classList.toggle('active');
+      const menuBtn = document.querySelector('.menu-btn');
+      const menu = document.querySelector('header nav ul.menu');
+      
+      menuBtn.classList.toggle('open');
+      menu.classList.toggle('active');
     }
 
-    const fadeInSections = document.querySelectorAll('.animate-fade-in');
-    const observer = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('in-view');
-          }
+    // Scroll animations with GSAP
+    gsap.registerPlugin(ScrollTrigger);
+    
+    gsap.utils.toArray('.animate__animated').forEach(section => {
+      gsap.from(section, {
+        scrollTrigger: {
+          trigger: section,
+          start: "top 80%",
+          toggleActions: "play none none none"
+        },
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        ease: "power2.out"
+      });
+    });
+    
+    // Animate contact cards sequentially
+    gsap.utils.toArray('.contact-card').forEach((card, i) => {
+      gsap.from(card, {
+        scrollTrigger: {
+          trigger: card,
+          start: "top 80%",
+          toggleActions: "play none none none"
+        },
+        opacity: 0,
+        y: 50,
+        duration: 0.8,
+        delay: i * 0.1,
+        ease: "back.out(1.7)"
+      });
+    });
+
+    // Video hover effect
+    document.querySelectorAll('.video-item').forEach(video => {
+      video.addEventListener('mouseenter', () => {
+        gsap.to(video.querySelector('.video-overlay'), {
+          opacity: 1,
+          duration: 0.3
         });
-      },
-      { threshold: 0.1 }
-    );
-    fadeInSections.forEach(section => observer.observe(section));
+      });
+      video.addEventListener('mouseleave', () => {
+        gsap.to(video.querySelector('.video-overlay'), {
+          opacity: 0,
+          duration: 0.3
+        });
+      });
+    });
   </script>
 </body>
 </html>
