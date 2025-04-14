@@ -43,60 +43,34 @@
         <div class="container">
             <h2>My Previous Work</h2>
             <div class="video-grid">
-                <div class="video-item">
-                    <video onclick="enlargeVideo(this)" controls autoplay loop muted>
-                        <source src="./A.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                 <div class="video-item">
+                    <iframe src="https://drive.google.com/file/d/1VWiudU2f4qlNufbqJxl6puHuFm9WOSu5/view?usp=drive_link" width="640" height="360" allow="autoplay"></iframe>
                 </div>
                 <div class="video-item">
-                    <video onclick="enlargeVideo(this)" controls autoplay loop muted>
-                        <source src="./videos/A(1).mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                    <iframe src="https://drive.google.com/file/d/11xbhm-Ah_GZiioD7GscdYdsxRBCyK3uI/view?usp=drive_link" width="640" height="360" allow="autoplay"></iframe>
                 </div>
                 <div class="video-item">
-                    <video onclick="enlargeVideo(this)" controls autoplay loop muted>
-                        <source src="./BY CHANCE BANGLORE.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                    <iframe src="https://drive.google.com/file/d/1VWiudU2f4qlNufbqJxl6puHuFm9WOSu5/view?usp=drive_link" width="640" height="360" allow="autoplay"></iframe>
                 </div>
                 <div class="video-item">
-                    <video onclick="enlargeVideo(this)" controls autoplay loop muted>
-                        <source src="./DR.JASHAN.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                    <iframe src="https://drive.google.com/file/d/1inlne54nlDseb26DIjctvownEPzBDYcv/view?usp=drive_link" width="640" height="360" allow="autoplay"></iframe>
                 </div>
                 <div class="video-item">
-                    <video onclick="enlargeVideo(this)" controls autoplay loop muted>
-                        <source src="./design dominators motion graphics.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                    <iframe src="https://drive.google.com/file/d/1_u7RBM67uI03jzpxtd3I-Ek-_5Q7IM_Z/view?usp=drive_link" width="640" height="360" allow="autoplay"></iframe>
                 </div>
                 <div class="video-item">
-                    <video onclick="enlargeVideo(this)" controls autoplay loop muted>
-                        <source src="./lv_0_20250210234249.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                    <iframe src="https://drive.google.com/file/d/1fkmgMLtwrTMn1TiswvHNUt-YS_koep7E/view?usp=drive_link" width="640" height="360" allow="autoplay"></iframe>
                 </div>
+                  <div class="video-item">
+                    <iframe src="https://drive.google.com/file/d/1Nj7gCteAUSbh4_mb72qlhZzcxKoMr0Yf/view?usp=drive_link" width="640" height="360" allow="autoplay"></iframe>
+                </div>  
                 <div class="video-item">
-                    <video onclick="enlargeVideo(this)" controls autoplay loop muted>
-                        <source src="./lv_0_20250225124655.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
+                    <iframe src="https://drive.google.com/file/d/1G3RiabUK8jZ_NgVP317Oo8p5qm_7-4YO/view?usp=drive_link" width="640" height="360" allow="autoplay"></iframe>
+                </div>  
                 <div class="video-item">
-                    <video onclick="enlargeVideo(this)" controls autoplay loop muted>
-                        <source src="./reel edit.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                    <iframe src="https://drive.google.com/file/d/1jj_ce6-0SwjLr1f4bJw3KNDinuniRyab/view?usp=drive_link" width="640" height="360" allow="autoplay"></iframe>
                 </div>
-                <div class="video-item">
-                    <video onclick="enlargeVideo(this)" controls autoplay loop muted>
-                        <source src="./timeline.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
+                <!-- Add more video items with the same pattern as above -->
             </div>
         </div>
     </section>
@@ -130,32 +104,7 @@
         </div>
     </footer>
 
-    <div id="video-overlay" class="overlay">
-        <div class="overlay-content">
-            <span class="close-btn" onclick="closeVideo()">&times;</span>
-            <video id="enlarged-video" controls></video>
-        </div>
-    </div>
-
     <script>
-        function enlargeVideo(videoElement) {
-            const overlay = document.getElementById('video-overlay');
-            const enlargedVideo = document.getElementById('enlarged-video');
-            enlargedVideo.src = videoElement.querySelector('source').src;
-            overlay.style.display = 'flex';
-            document.body.style.overflow = 'hidden'; // Disable scroll
-            videoElement.pause(); // Pause the clicked video
-        }
-
-        function closeVideo() {
-            const overlay = document.getElementById('video-overlay');
-            const enlargedVideo = document.getElementById('enlarged-video');
-            enlargedVideo.pause(); // Pause the enlarged video
-            enlargedVideo.src = '';
-            overlay.style.display = 'none';
-            document.body.style.overflow = 'auto'; // Enable scroll
-        }
-
         function toggleMenu() {
             const menu = document.querySelector('header nav ul.menu');
             menu.classList.toggle('active');
